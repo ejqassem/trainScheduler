@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Train Scheduler Web Application</title>
+  <!-- <meta http-equiv="refresh" content="30" /> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<body>
+  <header id="mainHeading">
+    <h1> Train Time </h1>
+    <p> Dynamically updated train schedule for all your travel needs </p>
+  </header>
+
+  <main>
+    <section>
+      <table id="trainTable">
+        <thead>
+        <tr>
+          <th> Train Name </th>
+          <th> Destination </th>
+          <th> Frequency(minutes) </th>
+          <th> Next Arrival </th>
+          <th> Minutes Away </th>
+        </tr>
+        </thead>
+        <tbody id="trainInfo">
+
+        </tbody>
+      </table>
+
+    </section>
+    <section>
+      <form name ="trainInput" id="trainInput" method="post" placeholder="">
+        <p>Train Name:</p>
+        <input type="text" name="train-name" id="trainName">
+        <p> Destination: </p>
+        <input type="text" name="destination" id="destination">
+        <p> First Train Time: </p>
+        <input type="text" name="first-train-time" id="firstTrainTime" placeholder="Military Time 12:00">
+        <p> Frequency(minutes): </p>
+        <input type="text" name="frequency" id="frequency">
+        <input type="submit" value="Submit" id="submitTrain">
+      </form>
+    </section>
+  </main>
+
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
