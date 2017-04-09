@@ -1,0 +1,19 @@
+body {
+  background-image: linear-gradient(rgba(255,255,255,0.10),rgba(255,255,255,0.10)), url("../images/backgroundImage2.jpg");
+  background-size: cover;
+}
+
+.container {
+  opacity: 1;
+  font-weight: 350;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black;
+    1px -1px 0 black;
+    -1px 1px 0 black;
+    1px 1px 0 black;
+}
+
+/*#alert-div {
+  color: red;
+}*/
